@@ -1,0 +1,28 @@
+#import "React/RCTViewManager.h"
+
+@interface RCT_EXTERN_MODULE(RNBannerViewManager, RCTViewManager)
+
+
+RCT_EXPORT_VIEW_PROPERTY(adUnit, NSString);
+RCT_EXPORT_VIEW_PROPERTY(bannerSize, NSString);
+RCT_EXPORT_VIEW_PROPERTY(testDeviceID, NSString);
+RCT_EXPORT_VIEW_PROPERTY(customTargeting, NSDictionary);
+
+RCT_EXPORT_VIEW_PROPERTY(onLog, RCTBubblingEventBlock)
+
+RCT_EXPORT_VIEW_PROPERTY(onSizeChange, RCTBubblingEventBlock)
+RCT_EXPORT_VIEW_PROPERTY(onAdmobDispatchAppEvent, RCTBubblingEventBlock)
+RCT_EXPORT_VIEW_PROPERTY(onAdViewDidReceiveAd, RCTBubblingEventBlock)
+RCT_EXPORT_VIEW_PROPERTY(onDidFailToReceiveAdWithError, RCTBubblingEventBlock)
+RCT_EXPORT_VIEW_PROPERTY(onAdViewWillPresentScreen, RCTBubblingEventBlock)
+RCT_EXPORT_VIEW_PROPERTY(onAdViewWillDismissScreen, RCTBubblingEventBlock)
+RCT_EXPORT_VIEW_PROPERTY(onAdViewDidDismissScreen, RCTBubblingEventBlock)
+RCT_EXPORT_VIEW_PROPERTY(onAdViewWillLeaveApplication, RCTBubblingEventBlock)
+
+
+
+
+
+RCT_EXPORT_VIEW_PROPERTY(onClick, RCTBubblingEventBlock)
+
+@end
